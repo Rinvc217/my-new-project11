@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>in giá trị trung bình các phần tử</title>
+</head>
+<body>
+<script>
+    var songuyen = [2,4,5,6,7,19,21,23,25,65];
+    var solonnhat = 0;
+    var sum = 0;
+    for(var i=0; i < songuyen.length; i++){
+        sum = sum +songuyen[i];
+        if(songuyen[i] > solonnhat){
+            solonnhat = songuyen[i];
+        }
+    }
+    var dtb = sum/songuyen.length ;
+    alert (" giá trị trung bình là " + solonnhat + " giá trị trung bình là " + dtb);
+</script>
+</body>
+</html>

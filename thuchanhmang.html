@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tạo và thao tác mảng</title>
+<body>
+<input type="text" id="nhapgia"></input>
+<input type="button" id="btnAdd" value="Add" onclick="kichluu1();"></input>
+<input type="button" id="btnDisplay" value="Display" onclick="hienthi();"></input>
+<div id="result"></div>
+<style>
+    body {padding-top:50px}
+</style>
+<script>
+    var x = 0;
+    var giatri = Array();
+    function kichluu1() {
+        giatri[x] = document.getElementById("nhapgia").value;
+        alert("elem: " + giatri[x] + "cocolala" + x);
+        x++;
+        document.getElementById("nhapgia").value = "";
+    }
+    function hienthi() {
+        var e = "<hr/>";
+        for (var i=0; i< giatri.length; i++) {
+            e += "kichluu " + i + " = " + giatri[i] + "<br/>";
+        }
+        document.getElementById("result").innerHTML = e;
+    }
+</script>
+</body>
+</html>

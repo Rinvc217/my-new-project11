@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var noinhapso = window.prompt();
+    var nhapso = noinhapso.toString();
+    var luuso = [nhapso[0]];
+    for (var i = 1; i < nhapso.length; i++) {
+        if (nhapso[i - 1] % 2 === 0 && nhapso[i] % 2 === 0) {
+            luuso.push('-', nhapso[i]);
+        } else {
+            luuso.push(nhapso[i]);
+        }
+    }
+    alert("ta có" + luuso.join(''));
+</script>
+</body>
+</html>

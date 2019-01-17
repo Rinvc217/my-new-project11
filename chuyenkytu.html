@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyển ký tự thường thành ký tự hoa</title>
+</head>
+<body>
+</body>
+<script>
+    var kytu = 'c';
+    var kytuhoa = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    var kytuthuong = 'abcdefghijklmnopqrstuvwxyz';
+    var i = [];
+    for(var x=0; x < kytu.length; x++)
+    {
+        if(kytuhoa.includes(kytu[x]))
+        {
+            i.push(kytu[x].toLowerCase());
+        }
+        else if(kytuhoa.includes(kytu[x]))
+        {
+            i.push(kytu[x].toUpperCase());
+        }
+        else
+        {
+            result.push(kytu[x]);
+        }
+    }
+    document.write(i.join(''));
+</script>
+</html>

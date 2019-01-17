@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tìm giá trị lơn nhát trong mảng</title>
+</head>
+<body>
+<script>
+    var x = [97,99,42,100,3,4,55,66,71,8,113,776206254];
+    var solonnhat = x[0];
+    for(var i=1; i < x.length; i++){
+        if(x[i] > solonnhat){
+            solonnhat = x[i];
+        }
+    }
+    alert ("muốn cưới vợ hãy gọi " + solonnhat + "luôn luôn lắng nghe");
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sukienchuot</title>
+</head>
+<body>
+<img id="trulli" src="./anh/trulli.jpg" style="position:absolute;left:0px; top:0px;" height="80px" width="120px"/><br>
+
+    <p style="padding-top: 40px;">moi ban re chuot</p>
+
+    <input type="button" value="noi kich" onclick="dichuyenchuot();"/>
+<script>
+    var rin = null;
+    rin = document.getElementById("trulli");
+    function khaibao(){
+        rin.style.position="relative";
+        rin.style.left = "0px";
+    }
+    function dichuyenchuot() {
+        rin.style.left = parseInt(rin.style.left) + 10 + "px";
+    }
+    window.onload =khaibao;
+</script>
+</body>
+</html>
